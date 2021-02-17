@@ -15,6 +15,7 @@ def caesar_cipher(word, shift=3)
         if char_code.between?(65,90) 
             x = (((char_code - 65 + shift) % 26) + 65)
 
+        # check for lowercase
         elsif char_code.between?(90,122)
             x =(((char_code - 97 + shift) % 26) + 97)
         end
